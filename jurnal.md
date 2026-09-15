@@ -54,3 +54,15 @@
 
         modified:   jurnal.md
         new file:   requirements.txt
+
+#### 2.5 Create Django Project
+
+		$ django-admin startproject config .
+
+		$ tree config
+		config
+		|-- __init__.py
+		|-- asgi.py
+		|-- settings.py
+		|-- urls.py
+		`-- wsgi.py
