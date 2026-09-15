@@ -174,8 +174,8 @@
         modified:   jurnal.md
         modified:   templates/pages/home.html
 
-#### 4.5 Create Base Template
-#### 4.6 Breaking HTML Template
-#### 4.7 Pages Template Implementation
-#### 4.8 Dynamic Navigation Link
-#### 4.9 Update Remote Repository
+#### 4.5 Create and Load Base Template
+
+        modified:   apps/pages/views.py
+        modified:   jurnal.md
+        new file:   templates/base.html
