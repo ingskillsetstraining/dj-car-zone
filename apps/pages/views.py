@@ -1,3 +1,7 @@
-from django.shortcuts import render
+# apps/pages/views.py
 
-# Create your views here.
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def home_view(request):
+    return HttpResponse("<h1>Hello, World! Welcome to DJ-CAR-ZONE!</h1>")

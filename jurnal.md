@@ -81,3 +81,32 @@
 		    |-- models.py
 		    |-- tests.py
 		    `-- views.py
+
+#### 2.7 Register the pages app and Display Hello World
+
+        modified:   apps/pages/apps.py
+        modified:   apps/pages/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   jurnal.md
+
+		$ python manage.py check
+		System check identified no issues (0 silenced).
+		(venv31361)
+
+		$ python manage.py runserver
+		Watching for file changes with StatReloader
+		Performing system checks...
+
+		System check identified no issues (0 silenced).
+
+		You have 18 unapplied migration(s). Your project may not work properly until you apply the migration
+		s for app(s): admin, auth, contenttypes, sessions.
+		Run 'python manage.py migrate' to apply them.
+		September 15, 2026 - 19:20:29
+		Django version 6.1.1, using settings 'config.settings'
+		Starting WSGI development server at http://127.0.0.1:8000/
+		Quit the server with CTRL-BREAK.
+
+
+#### 2.8 Update Remote Repository
