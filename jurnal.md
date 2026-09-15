@@ -204,3 +204,12 @@
         new file:   templates/partials/5_page_search.html
         new file:   templates/partials/6_modal.html
         new file:   templates/partials/7_scripts.html
+
+#### 4.9 Components and Include
+
+        modified:   jurnal.md
+        new file:   templates/pages/components/home/1_slider.html
+        new file:   templates/pages/components/home/2_featured_car.html
+        new file:   templates/pages/components/home/3_latest_car.html
+        new file:   templates/pages/components/home/4_team.html
+        modified:   templates/pages/home.html
