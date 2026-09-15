@@ -110,3 +110,15 @@
 
 
 #### 2.8 Update Remote Repository
+
+		$ git push -u origin main
+		Enumerating objects: 44, done.
+		Counting objects: 100% (44/44), done.
+		Delta compression using up to 4 threads
+		Compressing objects: 100% (38/38), done.
+		Writing objects: 100% (42/42), 6.66 KiB | 758.00 KiB/s, done.
+		Total 42 (delta 15), reused 0 (delta 0), pack-reused 0 (from 0)
+		remote: Resolving deltas: 100% (15/15), completed with 1 local object.
+		To https://github.com/ingskillsetstraining/dj-car-zone
+		   700d6a0..75ad5b9  main -> main
+		branch 'main' set up to track 'origin/main'.
