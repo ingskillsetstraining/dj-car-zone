@@ -185,3 +185,9 @@
         modified:   apps/pages/views.py
         modified:   jurnal.md
         modified:   templates/pages/home.html
+
+#### 4.7 Template Inheritance
+
+        modified:   jurnal.md
+        modified:   templates/base.html
+        modified:   templates/pages/home.html
