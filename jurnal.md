@@ -191,3 +191,16 @@
         modified:   jurnal.md
         modified:   templates/base.html
         modified:   templates/pages/home.html
+
+#### 4.8 Partials and Include
+
+        modified:   jurnal.md
+        modified:   templates/base.html
+        modified:   templates/pages/home.html
+        new file:   templates/partials/1_top_header.html
+        new file:   templates/partials/2_main_header.html
+        new file:   templates/partials/3_intro_section.html
+        new file:   templates/partials/4_footer.html
+        new file:   templates/partials/5_page_search.html
+        new file:   templates/partials/6_modal.html
+        new file:   templates/partials/7_scripts.html
