@@ -12,3 +12,6 @@
 
         modified:   .gitignore
         new file:   jurnal.md
+
+
+## Section 2: Setup
