@@ -156,3 +156,16 @@
         renamed:    apps/pages/templates/pages/contact.html -> templates/pages/contact.html
         renamed:    apps/pages/templates/pages/home.html -> templates/pages/home.html
         renamed:    apps/pages/templates/pages/services.html -> templates/pages/services.html
+
+#### 4.2 Add Template to Home Page
+
+        modified:   jurnal.md
+        modified:   templates/pages/home.html
+
+#### 4.3 Static and Media Files Configuration
+#### 4.4 Loding Static and Media Files
+#### 4.5 Create Base Template
+#### 4.6 Breaking HTML Template
+#### 4.7 Pages Template Implementation
+#### 4.8 Dynamic Navigation Link
+#### 4.9 Update Remote Repository
