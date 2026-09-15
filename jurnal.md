@@ -143,3 +143,6 @@
         modified:   apps/pages/urls.py
         modified:   apps/pages/views.py
         modified:   jurnal.md
+
+
+## Section 4: Html Template, Static & Media Files
