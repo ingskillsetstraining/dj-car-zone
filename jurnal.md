@@ -179,3 +179,9 @@
         modified:   apps/pages/views.py
         modified:   jurnal.md
         new file:   templates/base.html
+
+#### 4.6 Extends base.html to home page
+
+        modified:   apps/pages/views.py
+        modified:   jurnal.md
+        modified:   templates/pages/home.html
