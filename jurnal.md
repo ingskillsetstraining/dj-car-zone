@@ -125,3 +125,11 @@
 
 
 ## Section 3: Templates, Views, Urls
+
+#### 3.1 Create Home Page
+
+        new file:   apps/pages/templates/pages/home.html
+        new file:   apps/pages/urls.py
+        modified:   apps/pages/views.py
+        modified:   config/urls.py
+        modified:   jurnal.md
