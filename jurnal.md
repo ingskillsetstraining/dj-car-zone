@@ -66,3 +66,18 @@
 		|-- settings.py
 		|-- urls.py
 		`-- wsgi.py
+
+#### 2.6 Create Django App
+
+		$ mkdir apps
+		$ python manage.py startapp pages apps/pages
+		$ tree apps -L 2
+		apps
+		`-- pages
+		    |-- __init__.py
+		    |-- admin.py
+		    |-- apps.py
+		    |-- migrations
+		    |-- models.py
+		    |-- tests.py
+		    `-- views.py
