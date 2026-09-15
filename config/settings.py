@@ -127,3 +127,27 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# ----------------Added New Scripts-------------------------------
+# ==============================================================================
+# STATIC FILES CONFIGURATION
+# ==============================================================================
+STATIC_URL = '/static/'
+
+# Direktori tempat mengumpulkan semua static files saat produksi (python manage.py collectstatic)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Direktori tambahan tempat menaruh asset global selama masa development
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# ==============================================================================
+# MEDIA FILES CONFIGURATION (USER UPLOADS)
+# ==============================================================================
+MEDIA_URL = '/media/'
+
+# Direktori fisik tempat file upload disimpan di server
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# ----------------Added New Scripts End-------------------------------

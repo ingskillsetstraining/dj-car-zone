@@ -163,9 +163,6 @@
         modified:   templates/pages/home.html
 
 #### 4.3 Static and Media Files Configuration
-#### 4.4 Loding Static and Media Files
-#### 4.5 Create Base Template
-#### 4.6 Breaking HTML Template
-#### 4.7 Pages Template Implementation
-#### 4.8 Dynamic Navigation Link
-#### 4.9 Update Remote Repository
+
+        modified:   config/settings.py
+        modified:   config/urls.py
