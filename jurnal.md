@@ -122,3 +122,6 @@
 		To https://github.com/ingskillsetstraining/dj-car-zone
 		   700d6a0..75ad5b9  main -> main
 		branch 'main' set up to track 'origin/main'.
+
+
+## Section 3: Templates, Views, Urls
