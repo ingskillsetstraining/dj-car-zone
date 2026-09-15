@@ -133,3 +133,13 @@
         modified:   apps/pages/views.py
         modified:   config/urls.py
         modified:   jurnal.md
+
+#### 3.2 Create Other Pages
+
+        new file:   apps/pages/templates/pages/about.html
+        new file:   apps/pages/templates/pages/cars.html
+        new file:   apps/pages/templates/pages/contact.html
+        new file:   apps/pages/templates/pages/services.html
+        modified:   apps/pages/urls.py
+        modified:   apps/pages/views.py
+        modified:   jurnal.md
