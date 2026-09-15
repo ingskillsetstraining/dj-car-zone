@@ -166,3 +166,16 @@
 
         modified:   config/settings.py
         modified:   config/urls.py
+
+#### 4.4 Loding Static and Media Files
+
+        modified:   .gitignore
+        modified:   config/urls.py
+        modified:   jurnal.md
+        modified:   templates/pages/home.html
+
+#### 4.5 Create Base Template
+#### 4.6 Breaking HTML Template
+#### 4.7 Pages Template Implementation
+#### 4.8 Dynamic Navigation Link
+#### 4.9 Update Remote Repository
