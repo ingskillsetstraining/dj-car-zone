@@ -146,3 +146,13 @@
 
 
 ## Section 4: Html Template, Static & Media Files
+
+#### 4.1 Activating Django Templates and Moving Template Pages
+
+        modified:   config/settings.py
+        modified:   jurnal.md
+        renamed:    apps/pages/templates/pages/about.html -> templates/pages/about.html
+        renamed:    apps/pages/templates/pages/cars.html -> templates/pages/cars.html
+        renamed:    apps/pages/templates/pages/contact.html -> templates/pages/contact.html
+        renamed:    apps/pages/templates/pages/home.html -> templates/pages/home.html
+        renamed:    apps/pages/templates/pages/services.html -> templates/pages/services.html
