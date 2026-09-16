@@ -227,3 +227,11 @@
 
         modified:   jurnal.md
         modified:   templates/partials/2_main_header.html
+
+#### 4.12 Adding Active State to Menu
+
+        new file:   apps/pages/templatetags/__init__.py
+        new file:   apps/pages/templatetags/navigation_tags.py
+        modified:   jurnal.md
+        modified:   templates/base.html
+        modified:   templates/partials/2_main_header.html
