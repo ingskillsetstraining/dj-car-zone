@@ -253,3 +253,5 @@
 		...
 		branch 'main' set up to track 'origin/main'.
 
+
+## Section 5: Blog App
