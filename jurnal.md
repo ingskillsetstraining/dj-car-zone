@@ -222,3 +222,8 @@
         modified:   templates/pages/cars.html
         modified:   templates/pages/contact.html
         modified:   templates/pages/services.html
+
+#### 4.11 Dynamic Navigation Link
+
+        modified:   jurnal.md
+        modified:   templates/partials/2_main_header.html
