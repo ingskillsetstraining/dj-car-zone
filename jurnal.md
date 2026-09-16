@@ -255,3 +255,17 @@
 
 
 ## Section 5: Blog App
+
+#### 5.1 Create Blog App
+
+	$ python manage.py startapp blog apps/blog
+
+	apps/blog
+	|-- __init__.py
+	|-- admin.py
+	|-- apps.py
+	|-- migrations
+	|   `-- __init__.py
+	|-- models.py
+	|-- tests.py
+	`-- views.py
