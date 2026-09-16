@@ -269,3 +269,9 @@
 	|-- models.py
 	|-- tests.py
 	`-- views.py
+
+#### 5.2 Register the Blog App to the Project
+
+        modified:   apps/blog/apps.py
+        modified:   config/settings.py
+        modified:   jurnal.md
