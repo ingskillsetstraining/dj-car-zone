@@ -323,3 +323,11 @@
         new file:   templates/blog/components/detail/3_comments.html
         new file:   templates/blog/components/detail/4_comments_form.html
         new file:   templates/blog/components/detail/5_related_blog.html
+
+#### 5.6 Configure Dynamic Links and Active State to Blog Menu
+
+        modified:   apps/pages/templatetags/navigation_tags.py
+        modified:   templates/blog/components/blog/1_breadcrumb.html
+        modified:   templates/blog/components/blog/2_featured_posts.html
+        modified:   templates/blog/components/detail/1_breadcrumb.html
+        modified:   templates/partials/2_main_header.html

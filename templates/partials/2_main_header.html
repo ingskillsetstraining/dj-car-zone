@@ -11,29 +11,32 @@
                 <span class="fa fa-bars"></span>
             </button>
             <div class="navbar-collapse collapse w-100" id="navbar">
-<ul class="navbar-nav ml-auto">
-    <!-- Panggil tag dengan format: {% is_active 'namespace:name' %} -->
-    <li class="nav-item {% is_active 'pages:home' %}">
-        <a class="nav-link" href="{% url 'pages:home' %}">Home</a>
-    </li>
-    <li class="nav-item {% is_active 'pages:cars' %}">
-        <a class="nav-link" href="{% url 'pages:cars' %}">Cars</a>
-    </li>
-    <li class="nav-item {% is_active 'pages:about' %}">
-        <a class="nav-link" href="{% url 'pages:about' %}">About</a>
-    </li>
-    <li class="nav-item {% is_active 'pages:services' %}">
-        <a class="nav-link" href="{% url 'pages:services' %}">Services</a>
-    </li>
-    <li class="nav-item dropdown {% is_active 'pages:contact' %}">
-        <a class="nav-link" href="{% url 'pages:contact' %}">Contact</a>
-    </li>
-    <li class="nav-item dropdown m-hide">
-        <a href="#full-page-search" class="nav-link h-icon">
-            <i class="fa fa-search"></i>
-        </a>
-    </li>
-</ul>
+                <ul class="navbar-nav ml-auto">
+                    <!-- Panggil tag dengan format: {% is_active 'namespace:name' %} -->
+                    <li class="nav-item {% is_active 'pages:home' exact=True %}">
+                        <a class="nav-link" href="{% url 'pages:home' %}">Home</a>
+                    </li>
+                    <li class="nav-item {% is_active 'pages:cars' %}">
+                        <a class="nav-link" href="{% url 'pages:cars' %}">Cars</a>
+                    </li>
+                    <li class="nav-item {% is_active 'pages:services' %}">
+                        <a class="nav-link" href="{% url 'pages:services' %}">Services</a>
+                    </li>
+                    <li class="nav-item {% is_active 'blog:blog' %}">
+                        <a class="nav-link" href="{% url 'blog:blog' %}">Blog</a>
+                    </li>
+                    <li class="nav-item {% is_active 'pages:about' %}">
+                        <a class="nav-link" href="{% url 'pages:about' %}">About</a>
+                    </li>
+                    <li class="nav-item dropdown {% is_active 'pages:contact' %}">
+                        <a class="nav-link" href="{% url 'pages:contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown m-hide">
+                        <a href="#full-page-search" class="nav-link h-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>

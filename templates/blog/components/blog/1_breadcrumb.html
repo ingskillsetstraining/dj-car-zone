@@ -1,12 +1,15 @@
 {% load static %}
+{% load navigation_tags %}
 
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
             <h1>Our Blog Insights</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Blog</li>
+                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li class="nav-item {% is_active 'blog:blog' %}">
+                    <a href="#">Blog</a>
+                </li>
             </ul>
         </div>
     </div>
