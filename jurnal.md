@@ -283,3 +283,43 @@
         modified:   config/urls.py
         modified:   jurnal.md
         new file:   templates/blog/blog.html
+
+#### 5.4 Blog Components & Include
+
+        modified:   jurnal.md
+        modified:   templates/blog/blog.html
+        new file:   templates/blog/components/blog/1_breadcrumb.html
+        new file:   templates/blog/components/blog/2_featured_posts.html
+        new file:   templates/blog/components/blog/3_latest_posts.html
+        new file:   templates/blog/components/blog/4_trending_posts.html
+        new file:   templates/blog/components/blog/5_pagination.html
+        new file:   templates/blog/components/common/1_right_sidebar_search_form.html
+        new file:   templates/blog/components/common/2_right_sidebar_category.html
+        new file:   templates/blog/components/common/3_right_sidebar_tag.html
+        new file:   templates/blog/components/common/4_right_sidebar_social.html
+        new file:   templates/blog/components/common/right_sidebar.html
+
+#### 5.5 Create Blog Detail Page
+
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   config/urls.py
+        modified:   jurnal.md
+        modified:   templates/base.html
+        modified:   templates/blog/blog.html
+        new file:   templates/blog/blog_detail.html
+        new file:   templates/blog/components/blog/1_breadcrumb.html
+        new file:   templates/blog/components/blog/2_featured_posts.html
+        new file:   templates/blog/components/blog/3_latest_posts.html
+        new file:   templates/blog/components/blog/4_trending_posts.html
+        new file:   templates/blog/components/blog/5_pagination.html
+        new file:   templates/blog/components/common/1_right_sidebar_search_form.html
+        new file:   templates/blog/components/common/2_right_sidebar_category.html
+        new file:   templates/blog/components/common/3_right_sidebar_tag.html
+        new file:   templates/blog/components/common/4_right_sidebar_social.html
+        new file:   templates/blog/components/common/right_sidebar.html
+        new file:   templates/blog/components/detail/1_breadcrumb.html
+        new file:   templates/blog/components/detail/2_detail_content.html
+        new file:   templates/blog/components/detail/3_comments.html
+        new file:   templates/blog/components/detail/4_comments_form.html
+        new file:   templates/blog/components/detail/5_related_blog.html

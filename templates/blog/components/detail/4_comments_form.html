@@ -1,0 +1,44 @@
+{% load static %}
+
+<div id="comment-form-container" class="contact-2 bg-white p-4 rounded shadow-sm mb-4">
+    <div class="main-title text-left mb-4">
+        <h4 class="text-dark font-weight-bold mb-1">Leave a Reply</h4>
+        <p id="reply-to-title" class="text-muted small" style="display: none;">
+            Membalas komentar dari <b id="reply-name" class="text-primary"></b> 
+            <a href="#" id="cancel-reply" class="text-danger font-weight-bold ml-2" style="text-decoration: underline;"><i class="fa fa-times"></i> Cancel</a>
+        </p>
+    </div>
+    
+    <form id="submission-comment-form">
+        <input type="hidden" id="parent-comment-id" value="">
+        
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="form-group name">
+                    <input type="text" id="form-user-name" class="form-control" placeholder="Full Name *" required>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <!-- Field Email Masuk Lagi & Tanpa required -->
+                <div class="form-group email">
+                    <input type="email" id="form-user-email" class="form-control" placeholder="Email (Optional)">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="form-group avatar-upload">
+                    <input type="file" id="form-user-avatar" class="form-control" accept="image/*" title="Upload Avatar Photo">
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <div class="form-group message">
+                    <textarea id="form-user-message" class="form-control" rows="4" placeholder="Write your message here... *" required></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="send-btn text-left">
+                    <button type="submit" class="btn btn-md button-theme btn-danger px-4">Post Comment</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -23,3 +23,4 @@ if settings.DEBUG:
     urlpatterns += static('services/img/', document_root=settings.BASE_DIR / 'static/img')
     urlpatterns += static('contact/img/', document_root=settings.BASE_DIR / 'static/img')
     urlpatterns += static('blog/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('blog/detail/img/', document_root=settings.BASE_DIR / 'static/img')

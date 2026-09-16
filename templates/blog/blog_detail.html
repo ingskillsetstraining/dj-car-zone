@@ -1,0 +1,158 @@
+<!-- templates/blog/blog_detail.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ block.super }} - Blog Detail{% endblock %}
+
+{% block content %}
+<!-- Sub banner start -->
+{% include 'blog/components/detail/1_breadcrumb.html' %}
+<!-- Sub Banner end -->
+
+<!-- Main Blog Detail Content start -->
+<div class="featured-car content-area">
+    <div class="container">
+        <div class="row">
+
+            <!-- Main content column (Left Area) start -->
+            <div class="col-lg-8 col-md-12">
+                
+                <!-- Detail content start -->
+                {% include 'blog/components/detail/2_detail_content.html' %}
+                <!-- Detail content end -->
+
+
+                <!-- ======================================================== -->
+                <!-- UNIT KOMENTAR FIX TOTAL: ANTI-BUG PERPINDAHAN FORM       -->
+                <!-- ======================================================== -->
+
+                <!-- Comments start -->
+                {% include 'blog/components/detail/3_comments.html' %}
+                <!-- Comments end -->
+
+                <!-- Comments form start -->
+                {% include 'blog/components/detail/4_comments_form.html' %}
+                <!-- Comments form end -->
+
+
+                <!-- 3. [KOMPONEN]: JavaScript Logika Penempatan setelah Klik Reply -->
+
+
+                <!-- ======================================================== -->
+
+            </div>
+            <!-- Main content column (Left) end -->
+
+            <!-- Right sidebar start -->
+            {% include 'blog/components/common/right_sidebar.html' %}
+            <!-- Right sidebar end -->
+
+        </div>
+    </div>
+</div>
+<!-- Blog Single Content end -->
+
+<!-- Related blog start -->
+{% include 'blog/components/detail/5_related_blog.html' %}
+<!-- Related blog end -->
+
+{% endblock content %}
+
+{% block comment_scripts %}
+<!-- Script for comment start -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const formElement = document.getElementById("submission-comment-form");
+    const formContainer = document.getElementById("comment-form-container");
+    const parentInput = document.getElementById("parent-comment-id");
+    const replyToTitle = document.getElementById("reply-to-title");
+    const replyName = document.getElementById("reply-name");
+    const cancelReply = document.getElementById("cancel-reply");
+    const mainTree = document.getElementById("main-comment-tree");
+
+    // Event delegation murni: menangkap klik tanpa memindahkan posisi form HTML
+    mainTree.addEventListener("click", function (e) {
+        const replyButton = e.target.closest(".btn-reply");
+        if (!replyButton) return; 
+
+        e.preventDefault();
+
+        // 1. Ambil ID komentar dan nama penulis yang diklik
+        const commentId = replyButton.getAttribute("data-comment-id");
+        const targetMediaBody = replyButton.closest(".media-body");
+        const authorName = targetMediaBody.querySelector("h6").innerText;
+
+        // 2. Tembakkan data tersebut ke form yang berada di paling bawah halaman
+        parentInput.value = commentId;
+        replyName.innerText = authorName;
+        replyToTitle.style.display = "block";
+
+        // 3. Scroll layar secara halus langsung menuju Form Komentar di bawah halaman
+        formContainer.scrollIntoView({ behavior: "smooth", block: "center" });
+        
+        // 4. Fokuskan kursor otomatis ke kolom input nama agar pengguna bisa langsung mengetik
+        document.getElementById("form-user-name").focus();
+    });
+
+    // Reset data form ke kondisi awal saat tombol Batal diklik
+    cancelReply.addEventListener("click", function (e) {
+        e.preventDefault();
+        resetFormState();
+    });
+
+    function resetFormState() {
+        parentInput.value = "";
+        replyToTitle.style.display = "none";
+        formElement.reset();
+    }
+
+    // Handle Submit Jalur Simulasi
+    formElement.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nameValue = document.getElementById("form-user-name").value;
+        const messageValue = document.getElementById("form-user-message").value;
+        const avatarFile = document.getElementById("form-user-avatar").files;
+        const parentId = parentInput.value;
+        
+        const newCommentId = "simulated-" + Date.now(); 
+
+        let avatarSrc = "img/avatar/avatar-1.jpg' %}"; 
+        if (avatarFile.length > 0) {
+            avatarSrc = URL.createObjectURL(avatarFile[0]); 
+        }
+
+        const commentHTML = `
+            <li class="media mb-3" id="comment-${newCommentId}">
+                <img src="${avatarSrc}" class="mr-3 rounded-circle border" alt="Avatar" style="width: 45px; height: 45px; object-fit: cover; flex-shrink: 0;">
+                <div class="media-body">
+                    <h6 class="mt-0 font-weight-bold text-dark mb-1">${nameValue}</h6>
+                    <p class="text-muted small mb-2">Just now (Simulated)</p>
+                    <p class="text-muted mb-2">${messageValue}</p>
+                    <a href="#" class="text-danger font-weight-bold small btn-reply" data-comment-id="${newCommentId}">
+                        <i class="fa fa-reply"></i> Reply
+                    </a>
+                    <ul class="list-unstyled comment-replies mt-3 pl-4 border-left"></ul>
+                </div>
+            </li>
+        `;
+
+        if (parentId) {
+            const parentElement = document.getElementById(`comment-${parentId}`);
+            if (parentElement) {
+                const targetUl = parentElement.querySelector(":scope > .media-body > .comment-replies");
+                if (targetUl) {
+                    targetUl.insertAdjacentHTML("beforeend", commentHTML);
+                }
+            }
+        } else {
+            mainTree.insertAdjacentHTML("beforeend", commentHTML);
+        }
+
+        formElement.reset();
+        resetFormState();
+    });
+});
+</script>
+<!-- Script for comment end -->
+{% endblock comment_scripts %}
