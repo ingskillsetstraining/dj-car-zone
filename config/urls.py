@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.pages.urls')),
+    path('blog/', include('apps.blog.urls')),
 ]
 
 # Aktifkan penyajian media files hanya selama masa development
@@ -21,3 +22,4 @@ if settings.DEBUG:
     urlpatterns += static('cars/img/', document_root=settings.BASE_DIR / 'static/img')
     urlpatterns += static('services/img/', document_root=settings.BASE_DIR / 'static/img')
     urlpatterns += static('contact/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('blog/img/', document_root=settings.BASE_DIR / 'static/img')

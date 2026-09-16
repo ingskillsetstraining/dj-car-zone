@@ -275,3 +275,11 @@
         modified:   apps/blog/apps.py
         modified:   config/settings.py
         modified:   jurnal.md
+
+#### 5.3 Create Blog Page
+
+        new file:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   config/urls.py
+        modified:   jurnal.md
+        new file:   templates/blog/blog.html
