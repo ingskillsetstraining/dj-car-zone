@@ -245,3 +245,11 @@
         modified:   templates/pages/contact.html
         modified:   templates/pages/home.html
         modified:   templates/pages/services.html
+
+#### 4.14 Update Remote Repository
+
+		$ git push -u origin main
+		Enumerating objects: 154, done.
+		...
+		branch 'main' set up to track 'origin/main'.
+
