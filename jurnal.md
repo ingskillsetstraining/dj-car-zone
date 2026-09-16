@@ -331,3 +331,11 @@
         modified:   templates/blog/components/blog/2_featured_posts.html
         modified:   templates/blog/components/detail/1_breadcrumb.html
         modified:   templates/partials/2_main_header.html
+
+#### 5.7 Update Remote Repository
+
+	$ git push -u origin main
+	Enumerating objects: 96, done.
+	...
+	   7e0dcbe..64e59fc  main -> main
+	branch 'main' set up to track 'origin/main'.
