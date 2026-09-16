@@ -235,3 +235,13 @@
         modified:   jurnal.md
         modified:   templates/base.html
         modified:   templates/partials/2_main_header.html
+
+#### 4.13 Making Page Title Dynamic
+
+        modified:   jurnal.md
+        modified:   templates/base.html
+        modified:   templates/pages/about.html
+        modified:   templates/pages/cars.html
+        modified:   templates/pages/contact.html
+        modified:   templates/pages/home.html
+        modified:   templates/pages/services.html

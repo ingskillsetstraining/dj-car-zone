@@ -2,6 +2,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}{{ block.super }} - Home{% endblock %}
+
 {% block content %}
 <!-- Slider start -->
 {% include 'pages/components/home/1_slider.html' %}
