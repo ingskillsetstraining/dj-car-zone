@@ -1,47 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Car Zone</title>
-</head>
-<body>
+<!-- templates/pages/about.html -->
+{% extends 'base.html' %}
+{% load static %}
 
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <nav>
-            <h2>[Logo] Car Zone</h2>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/cars/">Cars Catalog</a></li>
-                <li><a href="/about/">About Us</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/contact/">Contact Us</a></li>
+{% block content %}
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">About Us</li>
             </ul>
-        </nav>
-    </header>
-    <hr>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
 
-    <main>
-        <!-- BREADCRUMB -->
-        <nav>
-            <p><a href="/">Home</a> > About Us</p>
-        </nav>
-        <hr>
+<!-- Service center strat -->
+<div class="about-car content-area-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="about-car-photo">
+                    <div id="carDetailsSlider" class="carousel car-details-sliders slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                        </div>
+                        <!-- main slider carousel nav controls -->
+                        <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 align-self-center">
+                <div class="best-used-car">
+                    <h3>Welcome to <span>Car Zone</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+                    <p class="mb-0">electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service center end -->
 
-        <h2>About Us</h2>
-        <section id="about-content">
-            <h3>Our Company Story</h3>
-            <p>[Placeholder] Car Zone adalah platform otomotif terintegrasi berskala industri yang didirikan untuk memberikan transparansi dan kemudahan dalam mencari mobil impian Anda.</p>
-            <p>[Placeholder] Visi kami menjadi ekosistem digital otomotif nomor satu dengan layanan end-to-end terpercaya.</p>
-        </section>
-    </main>
-
-    <hr>
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Car Zone. All Rights Reserved. Built with Enterprise Django Standard.</p>
-    </footer>
-
-</body>
-</html>
+<!-- Our team start -->
+{% include 'pages/components/home/4_team.html' %}
+<!-- Our team end -->
+{% endblock content %}

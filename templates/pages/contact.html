@@ -1,61 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Car Zone</title>
-</head>
-<body>
+<!-- templates/pages/contact.html -->
+{% extends 'base.html' %}
+{% load static %}
 
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <nav>
-            <h2>[Logo] Car Zone</h2>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/cars/">Cars Catalog</a></li>
-                <li><a href="/about/">About Us</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/contact/">Contact Us</a></li>
+{% block content %}
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Contact Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Contact Us</li>
             </ul>
-        </nav>
-    </header>
-    <hr>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
 
-    <main>
-        <!-- BREADCRUMB -->
-        <nav>
-            <p><a href="/">Home</a> > Contact Us</p>
-        </nav>
-        <hr>
-
-        <h2>Contact Us</h2>
-        <section id="contact-info">
-            <h3>Get in Touch</h3>
-            <p><strong>Address:</strong> [Placeholder] Jl. Jalur Industri Enterprise No. 40, Jakarta, Indonesia</p>
-            <p><strong>Email:</strong> support@carzone.co.id</p>
-            <p><strong>Phone:</strong> +62 21-5555-6789</p>
-        </section>
-
-        <hr>
-
-        <!-- CONTACT FORM PLACEHOLDER -->
-        <section id="contact-form">
-            <h3>Send us a Message</h3>
-            <form action="#" method="POST">
-                <p>[Input Name Field Placeholder]</p>
-                <p>[Input Email Field Placeholder]</p>
-                <p>[Textarea Message Field Placeholder]</p>
-                <button type="button">[Submit Button]</button>
-            </form>
-        </section>
-    </main>
-
-    <hr>
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Car Zone. All Rights Reserved. Built with Enterprise Django Standard.</p>
-    </footer>
-
-</body>
-</html>
+<!-- Contact 2 start -->
+<div class="contact-2 content-area-5">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h1>Contact <span>Us</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group email">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group number">
+                                <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group message">
+                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="send-btn text-center">
+                                <button type="submit" class="btn btn-md button-theme">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="contact-info-2">
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-phone"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Phone:</h5>
+                                <p><a href="#">0477 8556 552</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-mail"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Email:</h5>
+                                <p><a href="#">info@themevessel.com</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-earth"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Web:</h5>
+                                <p><a href="#">info@themevessel.com</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box mb-0">
+                            <div class="icon">
+                                <i class="flaticon-fax"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Fax:</h5>
+                                <p><a href="#">+0477 85X6 552</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Contact 2 end -->
+{% endblock content %}

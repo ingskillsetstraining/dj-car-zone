@@ -213,3 +213,12 @@
         new file:   templates/pages/components/home/3_latest_car.html
         new file:   templates/pages/components/home/4_team.html
         modified:   templates/pages/home.html
+
+#### 4.10 Pages Template Implementation
+
+        modified:   config/urls.py
+        modified:   jurnal.md
+        modified:   templates/pages/about.html
+        modified:   templates/pages/cars.html
+        modified:   templates/pages/contact.html
+        modified:   templates/pages/services.html

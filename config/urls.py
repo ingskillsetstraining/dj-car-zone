@@ -17,3 +17,7 @@ if settings.DEBUG:
 
 # 🔥 TRIK ENTERPRISE: Tangkap request /img/ dari jQuery dan arahkan ke folder static/img
     urlpatterns += static('/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('about/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('cars/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('services/img/', document_root=settings.BASE_DIR / 'static/img')
+    urlpatterns += static('contact/img/', document_root=settings.BASE_DIR / 'static/img')
